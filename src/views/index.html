@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>Hacker news</title>
+		<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans|Baumans' rel='stylesheet' type='text/css'/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"  type="text/css" media="screen" charset="utf-8">
+	</head>
+	 <body>
+    	
+    	<section id="page"> <!-- Defining the #page section with the section tag -->
+    
+            <header> <!-- Defining the header section of the page with the appropriate tag -->
+            
+                <hgroup>
+                    <h1><img src="img/logo_hacker.png" height="50"/></h1>
+                    <h4>..an unoffical listing of hacker news</h4>
+                </hgroup>
+                
+                
+                
+                <ul class="filters nav nav-pills hidden-phone">
+	                <li><i class="fa fa-filter whiteOnly filter"></i></li>
+	                
+			    <li><a href="#" class="filterasc_points " onclick="filterAscPoints()" >Points <i class="fa fa-angle-up whiteOnly"></i></a></li>
+			    <li><a href="#" class="filterdesc_points " onclick="filterDesPoints()">Points <i class="fa fa-angle-down whiteOnly"></i>
+			    </a></li>
+			    <li><a href="#" class="filternewest " onclick="filterNewFirst()">Newest first</a></li>
+			    <li><a href="#" class="filteroldest" onclick="filterOldFirst()" >Oldest first</a></li>
+		
+			  </ul>
+                                
+               <form class="form-wrapper row">
+			    <input type="text" id="search" placeholder="Search for author or title ..."  required>
+			    <input type="button" value="go" id="submit" onclick="SearchByAuthor()">
+			</form>
+			
+			
+            
+            </header>
+            
+            <section id="articles" class="row"> <!-- A new section with the articles -->
+
+
+            </section>
+
+        <footer> <!-- Marking the footer section -->
+
+           <div class="line"></div>
+           
+           <p>Copyright 2017 - eeshhackernewz.com</p> <!-- Change the copyright notice -->
+           
+           <a href="#" class="up"><i class="fa fa-arrow-up whiteOnly"></i></a>
+           
+           
+
+        </footer>
+            
+		</section> <!-- Closing the #page section -->
+        
+        <!-- JavaScript Includes -->
+       
+        <script src="js/db.js"></script> 
+        <script src="js/dateHelper.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/list.js"></script>
+    </body>
+	
+</html>	
